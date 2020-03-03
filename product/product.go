@@ -22,7 +22,7 @@ type Products struct {
 func loadData() []byte {
 	jsonFile, err := os.Open("products.json")
 	if err != nil {
-		fmt.Println("erro: ",err.Error())
+		fmt.Println(err.Error())
 	}
 	defer jsonFile.Close()
 
